@@ -1,0 +1,33 @@
+##
+# Summary - List Comprehension Practice
+# Architects - Hunter Hall
+# Developed by - Hunter Hall
+# Date - 10/18/2022
+# Initial Version - 0.1
+# Description - List comprehension practice examples
+#
+# Modified by:
+# Modified date:
+# Version -
+# Description:
+#
+##
+try:
+    lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    new_lst = [item ** 2 for item in lst]
+    print(str(new_lst) + "\n")
+except Exception as e:
+    print("List comprehension.1 - Error Occured" + str(e))
+try:
+    items = [
+        ("Apple", 4),
+        ("Grapes", 6),
+        ("Orange", 3)
+        ]
+    prices = [item[1] for item in items]
+    print(prices)
+except Exception as e:
+    print("List comprehension.2 - Error Occured" + str(e))
+
+finally:
+    print("List comprehension complete")
